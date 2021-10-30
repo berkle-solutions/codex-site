@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berkley - Solução no controle de encomendas</title>
+    
+    <!--Fonte | https://fonts.google.com/specimen/Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!--Bootstrap CDN v4.4 | https://getbootstrap.com/docs/4.4/getting-started/download/ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- *******Scripts******* -->
+    <!-- JQuery v.3.4.0 - https://releases.jquery.com/jquery/ -->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" 
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" 
+    crossorigin="anonymous"></script>
+    
+    <!--Bootstrap CDN versions of JQuery and Popper.js https://getbootstrap.com/docs/4.4/getting-started/download/ -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    
+    <!--Bootstrap CDN v4.4 https://getbootstrap.com/docs/4.4/getting-started/download/ -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/863b9f8a5e.js" crossorigin="anonymous"></script>
+
+     <!-- Progress Bar | https://github.com/kimmobrunfeldt/progressbar.js/blob/4eb2ca6886f93b5de895c7cea234e67ae6729562/dist/progressbar.min.js -->
+     <script src="js/progressbar.min.js"></script>
+
+     <!--Parallax | https://github.com/pixelcog/parallax.js/ -->
+     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container" id="nav-container">
+          <!-- add essa class -->
+          <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+            <a href="#" class="navbar-brand">
+              <img id="logo" src="img/hdcagency_logo.svg" alt="Berkley"> Berkley Solutions
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" id="home-menu" href="#">Home</span></a>
+                <a class="nav-item nav-link" id="about-menu" href="#">A empresa</a>
+                <a class="nav-item nav-link" id="services-menu" href="#">Serviços</a>
+                <a class="nav-item nav-link" id="team-menu" href="#">Time</a>
+                <a class="nav-item nav-link" id="contact-menu" href="#">Contato</a>
+                <a class="nav-item nav-link" id="login-menu" href="#">Login</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+    </header>
+    <main>
+      <div class="container-fluid">
+        <!-- slider INICIO -->
+        <div id="mainSlider" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+            <li data-target="#mainSlider" data-slide-to="1"></li>
+            <li data-target="#mainSlider" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/banner1.png" class="d-block w-100" alt="Projetos de e-commerce">
+              <div class="carousel-caption d-md-block">
+                <h2>Quer aumentar a satisfação dos condôminos?</h2>
+                <p>Conte conosco, temos mais de 95% de avaliações positivas.</p>
+                <a href="#" class="main-btn">Ver Avaliações</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/banner2.png" class="d-block w-100" alt="Engenharia de Software">
+              <div class="carousel-caption d-md-block">
+                <h2>Está com dificuldades de gerenciar as altas demandas por encomendas?</h2>
+                <p>Nossa equipe de engenharia e vendas está pronta para lhe atender.</p>
+                <a href="#" class="main-btn">Entre em contato</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/banner3.png" class="d-block w-100" alt="Manutenção em Software">
+              <div class="carousel-caption d-md-block">
+                <h2>Quer acelerar o tempo de entrega das encomendas?</h2>
+                <p>Experimente nosso sistema baseado em notificações.</p>
+                <a href="#" class="main-btn">Entre em contato</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <a href="#mainSlider" class="carousel-control-prev" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a href="#mainSlider" class="carousel-control-next" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+          </div>
+        </div>
+        <!-- slider FIM -->
+        <!-- grid (about) INICIO-->
+        <div id="about-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h3 class="main-title">Sobre a Berkley Solutions</h3>
+              </div>
+              <div class="col-md-6">
+                <img class="img-fluid" src="img/agencia.jpg" alt="Agência hDC">
+              </div>
+              <div class="col-md-6">
+                <h3 class="about-title">Uma empresa que pensa no futuro dos condôminios</h3>
+                <p>Nossos sistemas são adaptados as últimas necessidades dos condôminios empresarias e residênciais.</p>
+                <p>Os sistemas são especificados por arquitetos de software que definem as melhores tecnologias.</p>
+                <p>Nossos designers trabalham constantemente na interface/layout dos sistemas para facilitar a interação ao negócio.</p>
+                <p>Veja outros diferenciais:</p>
+                <ul id="about-list">
+                  <li><i class="fas fa-check"></i>Utilização dos últimos frameworks web e Bancos de Dados</li>
+                  <li><i class="fas fa-check"></i>Layout responsivo para todos os dispositivos</li>
+                  <li><i class="fas fa-check"></i>Integração com diversos sistemas do mercado</li>
+                  <li><i class="fas fa-check"></i>Sistema de envio de notificações</li>
+                  <li><i class="fas fa-check"></i>Desenvolvimento com metodologia ágil</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- grid (serviços da empresa) INICIO-->
+        <div id="services-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h3 class="main-title">Nossas especialidades</h3>
+              </div>
+              <div class="col-md-4 service-box">
+                <i class="fas fa-mobile-alt"></i>
+                <h4>Aplicativos web responsivos</h4>
+                <p>Construimos aplicativos web adaptados a diferentes dispositivos</p>
+              </div>              
+              <div class="col-md-4 service-box">
+                <i class="fas fa-user-shield"></i>
+                <h4>Segurança</h4>
+                <p>Temos uma plataforma aderente a nova legislação LGPD, com o objetivo principal de garantir segurança, privacidade e transparência no uso de informações pessoais</p>
+              </div>
+              <div class="col-md-4 service-box">
+                <i class="fas fa-paint-brush"></i>
+                <h4>Design Criativo</h4>
+                <p>Nossos designers são especilizados em UI/UX e também possuem vasta experiência no mercado de software</p>
+              </div>
+              <div class="col-md-4 service-box">
+                <i class="fas fa-city"></i>
+                <h4>Experts em Condôminios</h4>
+                <p>Nossos sistemas encaixam-se com as regras e legislação condominial, suportado por experts na legislação vigente.</p>
+              </div>
+              <div class="col-md-4 service-box">
+                <i class="fas fa-hands-helping"></i>
+                <h4>Suporte 24x7</h4>
+                <p>Você sempre terá alguém da equipe disponível para suporte, em diferentes plataformas (site, email, chat)</p>
+              </div>
+              <div class="col-md-4 service-box">
+                <i class="fas fa-server"></i>
+                <h4>Experiência em servidores</h4>
+                <p>Garantimos uptime e também rápido tempo de resposta para manutenção dos sistemas em funcionamento.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--paralax (dados com resultados da empresa INICIO)-->
+        <div id="data-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 circle-box">
+                <div id="circleA"></div>
+                <p>Condôminios usando o sistema</p>
+              </div>
+              <div class="col-md-3 circle-box">
+                <div id="circleB"></div>
+                <p>Clientes Felizes</p>
+              </div>
+              <div class="col-md-3 circle-box">
+                <div id="circleC"></div>
+                <p>Colaboradores</p>
+              </div>
+              <div class="col-md-3 circle-box">
+                <div id="circleD"></div>
+                <p>Entregas no mês</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Time (Time da empresa)-->
+        <div id="team-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h3 class="main-title">Nosso time</h3>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="img/profile1.jpg" class="car-img-top" alt="Imagem de Perfil 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Nome</h5>
+                    <p>Software Developer</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="img/profile2.jpg" class="car-img-top" alt="Imagem de Perfil 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Nome</h5>
+                    <p>Consultant</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="img/profile3.jpg" class="car-img-top" alt="Imagem de Perfil 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Nome</h5>
+                    <p>Project Manager</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="img/profile4.jpg" class="car-img-top" alt="Imagem de Perfil 4">
+                  <div class="card-body">
+                    <h5 class="card-title">Nome</h5>
+                    <p>UX/UI Designer</p>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        <!-- Trabalhe conosco-->
+        <div id="apply-area">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6 apply-box" id="company-img"></div>
+              <div class="col-md-6 apply-box" id="pattern-img">
+                <h4>Gosta de desafios ?</h4>
+                <p>Temos várias posições abertas, entre elas: Software Engineers, UI/UX Designer, Product Manager e mais.</p>
+                <p>Clique no botão abaixo e confira os beneficios e as posições em aberto</p>
+                <p>Aqui você terá a oportunidade de trabalhar com as melhores tecnologias e profissionais.</p>
+                <a href="#" class="main-btn" id="apply-btn">Saiba Mais</a>
+              </div>
+            </div>          
+          </div>
+        </div>
+      </div>  
+    </main>
+    <footer>
+      <div id="contact-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="main-title">Entre em contato conosco</h3>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-phone"></i>
+              <p><span class="contact-title">Ligue para:</span>(11) 99999-9999</p>
+              <p><span class="contact-title">Horários:</span>08:00 - 18:00</p>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-envelope"></i>
+              <p><span class="contact-title">Envie um email:</span>contato@email.com</p>              
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-map-marker-alt"></i>
+              <p><span class="contact-title">Venha tomar um café:</span>Rua Lorem Ipsum, 345</p>              
+            </div>
+            <div class="col-md-6" id="msg-box">
+              <p>Ou nos deixe uma mensagem:</p>
+            </div>
+            <div class="col-md-6" id="contact-form">
+              <form action="">
+                <input type="email" class="form-control" placeholder="E-mail" name=email>
+                <input type="text" class="form-control" placeholder="Assunto" name=subject>
+                <textarea class="form-control" rows="3" placeholder="Sua mensagem ..." name="message"></textarea>
+                <input type="submit" class="main-btn" value="Enviar">
+              </form>
+            </div>
+          </div>
+        </div>
+          
+
+      </div>
+      <div id="copy-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>Desenvolvido por <a href="form_pessoa.html" target="_blank">Berkley Solutions</a> &copy; 2021</p>
+            </div>
+        
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
