@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berkley - Solução no controle de encomendas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif; 
+            background-image: linear-gradient(45deg, cyan, yellow);
+        }
+        .tela-login{
+            background-color:rgba(0, 0, 0, 0.9);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 80px;
+            border-radius: 15px;
+            color:white;
+        }
+        input{
+            padding: 15px;
+            border-radius: none;
+            outline: none;
+            font-size: 15px;
+        }
+
+    </style>
+
+    <!--Fonte | https://fonts.google.com/specimen/Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!--Bootstrap CDN v4.4 | https://getbootstrap.com/docs/4.4/getting-started/download/ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- *******Scripts******* -->
+    <!-- JQuery v.3.4.0 - https://releases.jquery.com/jquery/ -->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" 
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" 
+    crossorigin="anonymous"></script>
+    
+    <!--Bootstrap CDN versions of JQuery and Popper.js https://getbootstrap.com/docs/4.4/getting-started/download/ -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    
+    <!--Bootstrap CDN v4.4 https://getbootstrap.com/docs/4.4/getting-started/download/ -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/863b9f8a5e.js" crossorigin="anonymous"></script>
+
+     <!-- Progress Bar | https://github.com/kimmobrunfeldt/progressbar.js/blob/4eb2ca6886f93b5de895c7cea234e67ae6729562/dist/progressbar.min.js -->
+     <script src="js/progressbar.min.js"></script>
+
+     <!--Parallax | https://github.com/pixelcog/parallax.js/ -->
+     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container" id="nav-container">
+          <!-- add essa class -->
+          <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+            <a href="#" class="navbar-brand">
+              <img id="logo" src="img/hdcagency_logo.svg" alt="Berkley"> Berkley Solutions
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" id="home-menu" href="index.html">Home</span></a>
+                <a class="nav-item nav-link" id="about-menu" href="#empresa">A empresa</a>
+                <a class="nav-item nav-link" id="services-menu" href="#servicos">Serviços</a>
+                <a class="nav-item nav-link" id="team-menu" href="#time">Time</a>
+                <a class="nav-item nav-link" id="contact-menu" href="#contato">Contato</a>
+                <a class="nav-item nav-link" id="login-menu" href="login.html">Login</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+    </header>
+    <main>
+      <div class="container-fluid">
+        <div class="tela-login">
+            <h1>Login</h1>
+            <input type="text" name="e-mail" id="e-mail" class="form-control" placeholder="E-mail">
+            <br><br>
+            <input type="password" name="senha" id="senha" class="form-control" placeholder="Senha">
+            <br><br>
+            <input type="submit" class="main-btn" value="Enviar">
+        </div>
+        </div>
+
+        </div>
+        <!-- grid (serviços da empresa) INICIO-->
+    </main>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
